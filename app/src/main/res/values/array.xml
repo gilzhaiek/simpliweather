@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit_entries_preference">
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
+    </string-array>
+    <string-array name="unit_entryvalue_preference">
+        <item>C</item>
+        <item>F</item>
+    </string-array>
+</resources>

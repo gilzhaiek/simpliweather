@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:measureWithLargestChild="false"
+    android:nestedScrollingEnabled="false"
+    android:paddingBottom="100dp">
+
+
+    <ImageView
+        android:id="@+id/home_weather_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scaleType="fitCenter"
+        android:padding="20dp"
+        android:src="@drawable/weather_na"
+        android:foregroundGravity="center" />
+
+    <TextView
+        android:id="@+id/home_current_loc_temp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="24dp"
+        android:text="-"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <GridLayout
+        android:id="@+id/forecast_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:layout_gravity="center">
+        <LinearLayout
+            style="@style/forecast_icon_text"
+            android:layout_row="0"
+            android:layout_column="0">
+            <TextView
+                android:text="@string/today"
+                android:textColor="@color/colorAccent"
+                style="@style/forecast_text" />
+            <ImageView
+                android:id="@+id/d1_icon"
+                android:src="@drawable/weather_na"
+                style="@style/forecast_icon" />
+            <TextView
+                android:id="@+id/d1_max_temp"
+                android:text="100f"
+                style="@style/forecast_text" />
+            <TextView
+                android:id="@+id/d1_min_temp"
+                android:text="100f"
+                style="@style/forecast_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/forecast_icon_text"
+            android:layout_row="0"
+            android:layout_column="1">
+            <TextView
+                android:text="@string/tomorrow"
+                android:textColor="@color/colorAccent"
+                style="@style/forecast_text" />
+            <ImageView
+                android:id="@+id/d2_icon"
+                android:src="@drawable/weather_na"
+                style="@style/forecast_icon" />
+            <TextView
+                android:id="@+id/d2_max_temp"
+                android:text="100f"
+                style="@style/forecast_text" />
+            <TextView
+                android:id="@+id/d2_min_temp"
+                android:text="100f"
+                style="@style/forecast_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/forecast_icon_text"
+            android:layout_row="0"
+            android:layout_column="2">
+            <TextView
+                android:text="-"
+                android:id="@+id/day_3"
+                android:textColor="@color/colorAccent"
+                style="@style/forecast_text" />
+            <ImageView
+                android:id="@+id/d3_icon"
+                android:src="@drawable/weather_na"
+                style="@style/forecast_icon" />
+            <TextView
+                android:id="@+id/d3_max_temp"
+                android:text="100f"
+                style="@style/forecast_text" />
+            <TextView
+                android:id="@+id/d3_min_temp"
+                android:text="100f"
+                style="@style/forecast_text" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>
